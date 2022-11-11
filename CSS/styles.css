@@ -94,7 +94,7 @@
  body {
      font-family: var(--body-font);
      font-size: var(--normal-font-size);
-     background-color: var(--color-bkg1);
+     background-color: var(--color-lightgit);
  }
 
  h1,
@@ -166,7 +166,7 @@
  .section__subtitle {
      display: block;
      font-size: var(--small-font-size);
-     color: var(--color-light);
+     /*color: var(--color-light);*/
      margin-bottom: 3rem;
  }
 
@@ -632,7 +632,7 @@
 
 .footer__social-link{
     font-size: 1.25rem;
-    color: var(--color-bkg2)
+    color: var(--color-bkg2);
     transition: transform .3s;
 }
 
@@ -670,7 +670,7 @@ footer{
     }
 
     .skills__info{
-        grid-templatecolumns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -733,7 +733,7 @@ footer{
     .header{
         top: 0;
         bottom: initial;
-        transition: .4s:   
+        transition: .4s;   
     }
 
     .nav{
