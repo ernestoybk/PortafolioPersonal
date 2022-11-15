@@ -897,18 +897,25 @@ footer{
 
     .skills__info{
         grid-template-columns: repeat(2, 1fr);
+        padding: .5rem;
     }
 
     .work__item{
-        font-size: var(--normal-font-size)
+        font-size: var(--normal-font-size);
     }
 
     .work__filters{
+        width: 100%;
+        padding: .5rem;
         column-gap: .25rem;
+        display: flex;
+        flex-wrap: wrap;
     }
+
+    
 }
 
-@media screen and (min-width: 405px) {
+@media screen and (min-width: 341px) {
     .work__container{
         justify-content: center;
     }
@@ -916,6 +923,15 @@ footer{
     .work__container-element{
         width: 404px;
     }
+
+    .work__filters{
+        width: 100%;
+        padding: .5rem;
+        column-gap: .25rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
 }
 
 
