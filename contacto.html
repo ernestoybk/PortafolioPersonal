@@ -6,80 +6,206 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Favicon -->
-
+    <link rel="stylesheet" href="./img/favicon.png">
+    <!-- Remix icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="./CSS/styles.css">
-
-    <title>Document</title>
+    <title>Diseñador Yvan Baz</title>
 </head>
 
 <body>
-    <!-- Inicio del menú -->
-    <nav>
-        <img src="" alt="">
-        <ul>
-            <li><a href="./index.html">Sobre mi</a></li>
-            <li><a href="./servicios.html">Servicios</a></li>
-            <li><a href="./proyectos.html">Proyectos</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
-    <!-- Término del menú -->
+     <!-- Header -->
+     <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                Yvan Baz
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+
+                    <li class="nav__item">
+                        <a href="./index.html" class="nav__link">
+                            <i class="ri-home-line icon"></i> Sobre mi
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="./servicios.html" class="nav__link">
+                            <i class="ri-briefcase-4-line icon"></i> Servicios
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="./proyectos.html" class="nav__link">
+                            <i class="ri-trophy-line icon"></i> Proyectos
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="./contacto.html" class="nav__link">
+                            <i class="ri-mail-send-line icon"></i> Contacto
+                        </a>
+                    </li>
+
+                </ul>
+
+                <!-- Close button -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-circle-fill"></i>
+                </div>
+            </div>
+
+            <div class="nav__buttons">
+                <!-- Theme change button -->
+                <!-- <i class="ri-moon-line change-time" id="theme-buton"></i> -->
+
+                <!-- toggle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line icon"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
 
 
-    <!-- Inicio de la primera sección: Conoceme -->
+    <!-- Contacto -->
     <main class="main-section">
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contáctame</h2>
+            <span class="section__subtitle">Mantengamonos en contacto</span>
 
-        <div class="title-servicios">
-            <h1>Contacto</h1>
-            <p>Escribeme si tienes algun proyecto en mente</p>
-        </div>
+            <div class="contact__container container grid">
+                <div class="contact__content">
+                    <h3 class="contact__title">Hablemos</h3>
 
-        <!-- Primera columna -->
-        <div>
-            <input type="text">
-        </div>
-        <div>
-            <input type="text">
-        </div>
-        <div>
-            <input type="text">
-        </div>
+                    <div class="contact__info">
+                        <div class="contact__card">
+                            <i class="ri-mail-send-line contact__card-icon"></i>
+                            <h3 class="contact__card-title">Email</h3>
+                            <span class="contact__card-data">contacto@yvanbaz.com</span>
+
+                            <a href="mailto:contacto@yvanbaz.com" target="_blank" class="contact__button">
+                                <i class="ri-message-line contact__button-icon"></i> Escríbeme
+                            </a>
+                        </div>
+                        
+                        <div class="contact__card">
+                            <i class="ri-whatsapp-line contact__card-icon"></i>
+                            <h3 class="contact__card-title">WhatsApp</h3>
+                            <span class="contact__card-data">999 999 999</span>
+
+                            <a href="https://api.whatsapp.com/send?phone=51938215584&text=Hola,%20deseo%20m%C3%A1s%20informaci%C3%B3n" target="_blank" class="contact__button">
+                                <i class="ri-message-line contact__button-icon"></i> Escríbeme
+                            </a>
+                        </div> 
+
+                        <div class="contact__card">
+                            <i class="ri-messenger-line contact__card-icon"></i>
+                            <h3 class="contact__card-title">Messenger</h3>
+                            <span class="contact__card-data">Yvan Baz</span>
+
+                            <a href="https://m.me/yvanbaz" target="_blank" class="contact__button">
+                                <i class="ri-message-line contact__button-icon"></i> Escríbeme
+                            </a>
+                        </div> 
+                    </div>
+                </div>
+
+                <div class="contact__content">
+                    <h3 class="contact__title">Cuentame sobre tu proyecto</h3>
+
+                    <form action="" class="contact__form">
+                        <div class="contact__form-div">
+                            <label for="" class="contact__form-tag">Nombres</label>
+                            <input type="text" placeholder="Ingresa tus nombres" class="contact__form-input">
+                        </div>
+
+                        <div class="contact__form-div">
+                            <label for="" class="contact__form-tag">Apellidos</label>
+                            <input type="text" placeholder="Ingresa tus apellidos" class="contact__form-input">
+                        </div>
+
+                        <div class="contact__form-div">
+                            <label for="" class="contact__form-tag">Mail</label>
+                            <input type="text" placeholder="Ingresa tu email" class="contact__form-input">
+                        </div>
+
+                        <div class="contact__form-div">
+                            <label for="" class="contact__form-tag">Nombre de tu negocio/proyecto</label>
+                            <input type="text" placeholder="Ingresa el nombre de tu negocio/proyecto" class="contact__form-input">
+                        </div>
+
+                        <div class="contact__form-div contact__form-area">
+                            <label for="" class="contact__form-tag">¿En que puedo ayudarte?</label>
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Cuéntame más sobre tu negocio/proyecto y tus requerimientos" class="contact__form-input"></textarea>
+                        </div>
 
 
+                        <button class="work__send-button">Enviar mensaje</button>
 
+
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
     <!-- Fin de la primera sección -->
 
 
-    <Footer>
-        <div>
-            <img src="" alt="">
-            <p>Diseñado por Yvan Baz</p>
-        </div>
+    <footer class="footer">
+        <div class="footer__container container">
+            <h1 class="footer__title">Yvan Baz</h1>
+            <p>UX Designer</p>
 
-        <div>
-            <ul>
-                <li>Sobre mi</li>
-                <li>Servicios</li>
-                <li>Proyectos</li>
-                <li>Contacto</li>
+            <ul class="footer__list">
+                
+                <li>
+                    <a href="./index.html" class="footer__link">Sobre mi</a>
+                </li>
+
+                <li>
+                    <a href="./servicios.html" class="footer__link">Servicios</a>
+                </li>
+
+                <li>
+                    <a href="./servicios.html" class="footer__link">Proyectos</a>
+                </li>
+
+                <li>
+                    <a href="./contacto.html" class="footer__link">Contacto</a>
+                </li>
+
             </ul>
 
-            <ul>
-                <a href="https://www.linkedin.com/in/yvanbazalar/">
-                    <img src="" alt="">
+            <ul class="footer__social">
+               
+                <a href="https://dribbble.com/yvanbaz" target="_blank" class="footer__social-link">
+                    <i class="ri-dribbble-line"></i>
                 </a>
-                <a href="https://www.instagram.com/ux.yvanbaz/">
-                    <img src="" alt="">
+
+                <a href="https://codepen.io/ernestoybk" target="_blank" class="footer__social-link">
+                    <i class="ri-codepen-line"></i>
                 </a>
-                <a href="https://github.com/">
-                    <img src="" alt="">
+
+                <a href="https://www.linkedin.com/in/yvanbazalar/" target="_blank" class="footer__social-link">
+                    <i class="ri-linkedin-fill"></i>
                 </a>
+
+                <a href="https://github.com/ernestoybk" target="_blank" class="footer__social-link">
+                    <i class="ri-github-fill"></i>
+                </a>
+
             </ul>
-            <p>Yvanbaz All Rights reserved</p>
+
+            <span class="footer__copy">&#169 Copyright Yvanbaz All Rights reserved</span>
+
         </div>
-    </Footer>
+    </footer>
+
+     <!-- Main JS -->
+     <script src="./js/main.js"></script>
 
 </body>
 
