@@ -49,4 +49,41 @@ function activeWork(){
     this.classList.add('active-work')
 }
 
-linkWork.forEach(l=> l.addEventListener('click', activeWork))
+linkWork.forEach(l=> l.addEventListener('click', activeWork));
+
+
+/* ========== Email JS==========*/
+const contactForm = document.getElementById('contact-form'),
+      contactName = document.getElementById('contact-name'),
+      contactEmail = document.getElementById('contact-email'),
+      contactProject = document.getElementById('contact-project'),
+      contactMessage = document.getElementById('contact-message')
+
+const sendEmail = (e) =>{
+    e.preventDefault()
+
+    //check if the field has a value
+    if(contactName.value === '' || contactEmail.value === '' || contactProject.value === ''){
+
+        //Add and remove color
+        contactMessage.classList.remove('color-blue')
+        contactMessage.classList.add('color-red')
+
+        //Show message
+        contactMessage.textContent = 'Debes completar todos los campos 🧐'
+    }else{
+        //serviceID - templateID - #form - Publickey
+        emailjs.sendForm('service_5ie9h6s','template_o5oixtw','#contact-form','Xqb8QY66DTeRZ2aPx')
+        .then(()=>{
+            //Show message and add color
+            contactMessage.classList.add('color-blue')
+            contactMessage.textContent = 'Message sent ✅'
+
+            //Remove message after five seconds
+            setTimeout(() =>{
+                contactMessage.textContent = ''
+            }, 5000)
+        })
+    }
+}
+contactForm.addEventListener('submit', sendEmail)

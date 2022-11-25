@@ -116,34 +116,29 @@
                 <div class="contact__content">
                     <h3 class="contact__title">Cuentame sobre tu proyecto</h3>
 
-                    <form action="" class="contact__form">
-                        <div class="contact__form-div">
-                            <label for="" class="contact__form-tag">Nombres</label>
-                            <input type="text" placeholder="Ingresa tus nombres" class="contact__form-input">
-                        </div>
+                    <form action="" class="contact__form" id="contact-form">
 
                         <div class="contact__form-div">
-                            <label for="" class="contact__form-tag">Apellidos</label>
-                            <input type="text" placeholder="Ingresa tus apellidos" class="contact__form-input">
+                            <label for="" class="contact__form-tag">Nombre completo</label>
+                            <input type="text" name="user-name" required placeholder="Ingresa tu nombre completo" class="contact__form-input" id="contact-name">
                         </div>
 
                         <div class="contact__form-div">
                             <label for="" class="contact__form-tag">Mail</label>
-                            <input type="text" placeholder="Ingresa tu email" class="contact__form-input">
+                            <input type="text" name="user_email"  required placeholder="Ingresa tu email" class="contact__form-input" id="contact-email">
                         </div>
 
-                        <div class="contact__form-div">
-                            <label for="" class="contact__form-tag">Nombre de tu negocio/proyecto</label>
-                            <input type="text" placeholder="Ingresa el nombre de tu negocio/proyecto" class="contact__form-input">
-                        </div>
 
                         <div class="contact__form-div contact__form-area">
                             <label for="" class="contact__form-tag">¿En que puedo ayudarte?</label>
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Cuéntame más sobre tu negocio/proyecto y tus requerimientos" class="contact__form-input"></textarea>
+                            <textarea name="user_project"  cols="30" rows="10" placeholder="Cuéntame más sobre tu negocio/proyecto y tus requerimientos" class="contact__form-input" id="contact-project"></textarea>
                         </div>
 
-
-                        <button class="work__send-button">Enviar mensaje</button>
+                        <p class="contact__message" id="contact-message"></p>
+                        
+                        <button type="submit" class="work__send-button">
+                            Enviar mensaje
+                        </button>
 
 
                     </form>
@@ -203,6 +198,9 @@
 
         </div>
     </footer>
+
+     <!-- Email JS -->
+     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
      <!-- Main JS -->
      <script src="./js/main.js"></script>

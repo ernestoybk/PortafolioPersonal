@@ -1,100 +1,253 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en">  
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Favicon -->
-
+    <link rel="stylesheet" href="./img/favicon.png">
+    <!-- Remix icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="./CSS/styles.css">
-
-    <title>Document</title>
+    <title>Diseñador Yvan Baz</title>
 </head>
 
 <body>
-    <!-- Inicio del menú -->
-    <nav>
-        <img src="" alt="">
-        <ul>
-            <li><a href="./index.html">Sobre mi</a></li>
-            <li><a href="./servicios.html">Servicios</a></li>
-            <li><a href="./proyectos.html">Proyectos</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
-    <!-- Término del menú -->
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                Yvan Baz
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+
+                    <li class="nav__item">
+                        <a href="./index.html" class="nav__link">
+                            <i class="ri-home-line icon"></i> Sobre mi
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="./servicios.html" class="nav__link">
+                            <i class="ri-briefcase-4-line icon"></i> Servicios
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="./proyectos.html" class="nav__link">
+                            <i class="ri-trophy-line icon"></i> Proyectos
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="./contacto.html" class="nav__link">
+                            <i class="ri-mail-send-line icon"></i> Contacto
+                        </a>
+                    </li>
+
+                </ul>
+
+                <!-- Close button -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-circle-fill"></i>
+                </div>
+            </div>
+
+            <div class="nav__buttons">
+                <!-- Theme change button -->
+                <!-- <i class="ri-moon-line change-time" id="theme-buton"></i> -->
+
+                <!-- toggle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line icon"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="main">
 
 
-    <!-- Inicio de la primera sección: Conoceme -->
-    <main class="main-section">
 
-        <div class="title-servicios">
-            <a href="./proyectos.html">Proyectos</a>
-            <p>Diseño Web TumiSoft</p>
-            <h1>Web Pública - TumiSoft</h1>
-        </div>
+        <!-- Work -->
+        <section class="work section" id="work">
+            <div class="dproject__container">
+                <span class="dproject-item">
+                    <i class="ri-arrow-left-circle-fill"></i>Proyecto anterior
+                </span>
+                <span class="dproject-item">
+                    Proyecto siguiente<i class="ri-arrow-right-circle-fill"></i>
+                </span>
+            </div>
+            <h2 class="section__title">Diseño Web Pública TumiSoft</h2>
 
-        <img src="#" alt="">
+            <!-- Filtros -->
+            <div class="work__filters">
+                <span class="work__item active-work" data-filter='all'>Todos</span>
+                <span class="work__item" data-filter='.branding'>Branding</span>
+                <span class="work__item" data-filter='.ux'>Diseño UI/UX</span>
+                <span class="work__item" data-filter='.web'>Diseño Web</span>
+            </div>
+            
+            <div class="work__container container grid">
 
-        <!-- Primera columna -->
-        <div>
-            <h3>Objetivo del proyecto</h3>
-            <p>El objetivo de este proyecto fué aumentar la taza de conversión en un 10%. Algunas de las acciones que se
-                llevaron a cabo para lograrlo.</p>
-            <ul>
-                <li>Benchmarking</li>
-                <li>Arquitectura de la información</li>
-                <li>Entrevistas con usuarios</li>
-                <li>Diseño de wireframes en baja</li>
-                <li>Validación con usuarios</li>
+                <!-- Card 1-->
+                <div class="work__container-element mix branding">
+                    <div class="work__card">
+                        <img src="./img/project-1.jpg" alt="" class="work__img">                        
+
+                        <div class="projects__modal">
+                            <a href="#" class="work__button">
+                                <i class="ri-fullscreen-line work__icon"></i>Ver proyecto
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="work__title">Diseño de Web Pública - TumiSoft</h3>
+                </div>
+
+
+                <!-- Card 2-->
+                <div class="work__container-element mix ux">
+                    <div class="work__card">
+                        <img src="./img/project-1.jpg" alt="" class="work__img">                        
+
+                        <div class="projects__modal">
+                            <a href="#" class="work__button">
+                                <i class="ri-fullscreen-line work__icon"></i>Ver proyecto
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="work__title">Diseño de Web Pública - TumiSoft</h3>
+                </div>
+
+
+                <!-- Card 3-->
+                <div class="work__container-element mix web">
+                    <div class="work__card">
+                        <img src="./img/project-1.jpg" alt="" class="work__img">                        
+
+                        <div class="projects__modal">
+                            <a href="#" class="work__button">
+                                <i class="ri-fullscreen-line work__icon"></i>Ver proyecto
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="work__title">Diseño de Web Pública - TumiSoft</h3>
+                </div>
+                
+                <!-- Card 4-->
+                <div class="work__container-element mix branding">
+                    <div class="work__card">
+                        <img src="./img/project-1.jpg" alt="" class="work__img">                        
+
+                        <div class="projects__modal">
+                            <a href="#" class="work__button">
+                                <i class="ri-fullscreen-line work__icon"></i>Ver proyecto
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="work__title">Diseño de Web Pública - TumiSoft</h3>
+                </div>
+
+                <!-- Card 5-->
+                <div class="work__container-element mix ux">
+                    <div class="work__card">
+                        <img src="./img/project-1.jpg" alt="" class="work__img">                        
+
+                        <div class="projects__modal">
+                            <a href="#" class="work__button">
+                                <i class="ri-fullscreen-line work__icon"></i>Ver proyecto
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="work__title">Diseño de Web Pública - TumiSoft</h3>
+                </div>
+
+                <!-- Card 6-->
+                <div class="work__container-element mix web">
+                    <div class="work__card">
+                        <img src="./img/project-1.jpg" alt="" class="work__img">                        
+
+                        <div class="projects__modal">
+                            <a href="#" class="work__button">
+                                <i class="ri-fullscreen-line work__icon"></i>Ver proyecto
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="work__title">Diseño de Web Pública - TumiSoft</h3>
+                </div>
+
+
+            </div>
+        </section>
+
+
+
+
+
+
+    <!-- Footer -->
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <h1 class="footer__title">Yvan Baz</h1>
+            <p>UX Designer</p>
+
+            <ul class="footer__list">
+                
+                <li>
+                    <a href="./index.html" class="footer__link">Sobre mi</a>
+                </li>
+
+                <li>
+                    <a href="./servicios.html" class="footer__link">Servicios</a>
+                </li>
+
+                <li>
+                    <a href="./servicios.html" class="footer__link">Proyectos</a>
+                </li>
+
+                <li>
+                    <a href="./contacto.html" class="footer__link">Contacto</a>
+                </li>
+
             </ul>
-        </div>
 
-        <!-- Segunda columna -->
-        <div>
-            <h4>¿Quieres una cotización?</h4>
-            <p>Haz clic en el botón y cuentanos más sobre tu proyecto en el formulario.</p>
-            <a href="./contacto.html">Cotizar</a>
-        </div>
+            <ul class="footer__social">
+               
+                <a href="https://dribbble.com/yvanbaz" target="_blank" class="footer__social-link">
+                    <i class="ri-dribbble-line"></i>
+                </a>
 
+                <a href="https://codepen.io/ernestoybk" target="_blank" class="footer__social-link">
+                    <i class="ri-codepen-line"></i>
+                </a>
 
+                <a href="https://www.linkedin.com/in/yvanbazalar/" target="_blank" class="footer__social-link">
+                    <i class="ri-linkedin-fill"></i>
+                </a>
 
+                <a href="https://github.com/ernestoybk" target="_blank" class="footer__social-link">
+                    <i class="ri-github-fill"></i>
+                </a>
 
-
-    </main>
-    <!-- Fin de la primera sección -->
-
-
-    <Footer>
-        <div>
-            <img src="" alt="">
-            <p>Diseñado por Yvan Baz</p>
-        </div>
-
-        <div>
-            <ul>
-                <li>Sobre mi</li>
-                <li>Servicios</li>
-                <li>Proyectos</li>
-                <li>Contacto</li>
             </ul>
 
-            <ul>
-                <a href="https://www.linkedin.com/in/yvanbazalar/">
-                    <img src="" alt="">
-                </a>
-                <a href="https://www.instagram.com/ux.yvanbaz/">
-                    <img src="" alt="">
-                </a>
-                <a href="https://github.com/">
-                    <img src="" alt="">
-                </a>
-            </ul>
-            <p>Yvanbaz All Rights reserved</p>
+            <span class="footer__copy">&#169 Copyright Yvanbaz All Rights reserved</span>
+
         </div>
-    </Footer>
+    </footer>
+
+    <!-- Mixitup Filter -->
+    <script src="./js/mixitup.min.js"></script>
+
+    <!-- Main JS -->
+    <script src="./js/main.js"></script>
 
 </body>
 
